@@ -1,0 +1,23 @@
+[package]
+authors    =["Thor Kampefner <thorck@pm.me>"]
+description="""the intersection of cryptography and AI"""
+edition    ="2021"
+license    ="Apache2.0 OR MIT"
+name       ="raindom"
+repository ="https://github.com/thor314/raindom"
+version    ="0.1.0"
+
+[dependencies]
+anyhow   ="1.0"
+cute = "0.3.0"
+log       ="0.4" 
+thiserror="1.0"
+env_logger = "0.11"
+dotenvy = "0.15" 
+clap = {version = "4.4.16", features = ["derive"]}
+clap_complete = "4.5.1"
+delegate = "0.12.0" # useful for subcommand-style cli
+
+
+[dev-dependencies]
+rstest    ="0.18"         # testing convenience proc-macros
